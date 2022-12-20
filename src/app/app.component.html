@@ -3,7 +3,7 @@
   <label for="">Email(Valid with @gmail.com in end)</label>
   <input type="text" formControlName="email">
   <div>
-    <span *ngIf="signUpFrm.controls.email.errors" style="color: red;">Email is not Valid</span>
+    <span *ngIf="signUpFrm.controls.email.errors && signUpFrm.controls.email.touched" style="color: red;">Email is not Valid</span>
   </div>
 
   <label for="">Password</label>
